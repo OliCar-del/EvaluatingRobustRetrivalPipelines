@@ -20,12 +20,6 @@ By generating adversarial and semantic query variations on industry-standard dat
 * **Data Wrangling:** Processing and cleaning query variations utilizing `ir_datasets` and `pandas` on the **MS MARCO** and **ANTIQUE** datasets.
 * **Resilient Execution:** Engineered specifically for Google Colab, featuring continuous state checkpointing and serialization to Google Drive to seamlessly recover from session timeouts during heavy GPU workloads.
 
-## Repository Structure
-
-* `notebooks/` - Jupyter notebooks containing the query generation, perturbation logic, and evaluation loops.
-* `scripts/` - Data pipeline utilities for downloading, chunking, and memory-optimizing MS MARCO/ANTIQUE indexes.
-* `results/` - Aggregated CSVs tracking query provenance (misspellings, naturality, paraphrasing) and quantifying model performance degradation.
-
 ## Getting Started
 
 This project was designed to be executed in Google Colab to leverage free GPU compute for the deep learning models.
@@ -52,4 +46,4 @@ pip install pandas ir_datasets
 
 Developed as part of a Bachelor of Engineering (Honours) in Computer Systems / Electrical and Electronic Engineering at the University of Queensland.
 
-*The full thesis document and extended analysis are available upon request.*
+*The full thesis document and associated code is available within this repository, with note that the notebook has to be manually configured and executed multiple times to generate all neecessary datapoints. Due to the large amount of data downloaded and generated, these results are not uploaded here.*
